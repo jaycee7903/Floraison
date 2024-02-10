@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Benefits</title>
+	<style type="text/css">
+		*{
+			text-decoration: none;
+		}
+
+        body {
+        margin: 0;
+        padding: 0;
+        background-image: url(styles/img/background.jpg);
+        }
+
+		.navbar{
+			background: #FAC731; font-family: calibri; padding-right: 20px; padding-left: 15px; height: 100px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			max-height: 40px; /* Adjust the height of the logo if necessary */
+            margin-top: 5px; /* Adjust the margin to position the logo vertically */
+            margin-left: 10px; /* Adjust the margin to position the logo horizontally */
+            transition: color 0.3s, font-size 0.3s;
+		}
+
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: black; font-size: 25px; font-weight: bold; margin-right: 25px; text-align: center; font-family: cursive; transition: color 0.3s, font-size 0.3s; /* Add transition for smooth effect */
+		}
+
+        li a:hover {
+            color: #992800; /* Change font color on hover */
+            font-size: 35px; /* Enlarge the font size on hover */
+        }
+
+        .active {
+            color: #267061; /* Change color for the active link */
+            font-size: 35px; /* Change font size for the active link */
+        }
+
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        .image {
+            flex-basis: 45%;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+        }
+        .text {
+            font-size: 40px;
+            padding-left: 40px;
+            font-family: initial;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .text2 {
+            font-size: 20px;
+            padding-left: 0.5px;
+            font-family: initial;
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #267061;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .email, .phone {
+            margin-right: 20px;
+        }
+
+        .email p, .phone p {
+            margin: 0;
+        }
+
+        .email a, .phone a {
+            color: #FAC731;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .email a:hover, .phone a:hover {
+            color: #FFA500; /* Change color on hover */
+            font-size: 20px;
+        }
+
+        .svg-inline--fa {
+        vertical-align: -0.200em;
+        }
+
+        .rounded-social-buttons {
+        text-align: center;
+        }
+
+        .rounded-social-buttons .social-button {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width: 3.125rem;
+        height: 3.125rem;
+        border: 0.125rem solid transparent;
+        padding: 0;
+        text-decoration: none;
+        text-align: center;
+        color: #fefefe;
+        font-size: 1.5625rem;
+        font-weight: normal;
+        line-height: 2em;
+        border-radius: 1.6875rem;
+        transition: all 0.5s ease;
+        margin-right: 0.25rem;
+        margin-bottom: 0.25rem;
+        }
+
+        .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+        }
+
+        .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-tiktok, .fa-youtube, .fa-instagram {
+        font-size: 25px;
+        }
+
+        .rounded-social-buttons .social-button.facebook {
+        background: #FAC731;
+        }
+
+        .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+        color: #3b5998;
+        background: #fefefe;
+        border-color: #3b5998;
+        }
+
+        .rounded-social-buttons .social-button.twitter {
+        background: #FAC731;
+        }
+
+        .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+        color: #55acee;
+        background: #fefefe;
+        border-color: #55acee;
+        }
+
+        .rounded-social-buttons .social-button.tiktok {
+        background: #FAC731;
+        }
+
+        .rounded-social-buttons .social-button.tiktok:hover, .rounded-social-buttons .social-button.tiktok:focus {
+        color: #000000;
+        background: #fefefe;
+        border-color: #000000;
+        }
+
+        .rounded-social-buttons .social-button.instagram {
+        background: #FAC731;
+        }
+
+        .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+        color: #E1306C;
+        background: #fefefe;
+        border-color: #E1306C;
+        }
+
+
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<!--<div class="logo"><a href="#">Floraison</a> </div>-->
+            <li class="logo"><a href="test.html"><img src="styles/img/logo13.png"></a></li>
+			<ul>
+				<li><a href="test.html">Home</a></li>
+				<li><a href="about_uss.html">About Us</a></li>
+				<li><a href="products.html">Our Products</a></li>
+                <li><a class="active"  href="benefits.html">Product Benefits</a></li>
+				<li><a href="team.html">Our Team</a></li>
+				<li><a href="contact_us.html">Feedback</a></li>
+			</ul>
+		</div>
+	</nav>
+    <br>
+    <div class="container">
+        <div class="text">
+          <h1>Product Benefits</h1>
+          <br>
+          <div class="text2">
+          <h2>Our product, “Fluer Freshener”, help to remove bad odor and also it can help repel bug/insects. <br>
+            <br>
+             Other than that, it can act as an aromatherapy with the smell that blooms out from the freshener.</h2>
+        </div>
+        </div>
+        
+        <div class="image">
+            <img src="styles/img/home.png">
+          </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+
+      <footer>
+        <div class="contact-info">
+            <div class="email">
+                <p><a href="mailto:es4raison@gmail.com">Send email</a></p>
+            </div>
+            <div class="phone">
+                <p>Call us: +60 12-2704834</a></p>
+                <p>Call us: +60 19-6263787</a></p>
+            </div>
+        </div>
+        <div class="rounded-social-buttons">
+            <a class="social-button tiktok" href="https://www.tiktok.com/@es4raison" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/es4raison/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+
+</body>
+</html>
